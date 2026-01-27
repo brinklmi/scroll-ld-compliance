@@ -1,0 +1,106 @@
+{
+  "@context": "https://scroll-ld.org/ns",
+  "@type": "ScrollBundle",
+  "@id": "urn:scroll:energy-compliance-compressed:v1.0",
+  "title": "Akhem'Cline Energy Compliance Capsule (v3.2)",
+  "author": "Di-Na-Teh → Akhem'Cline Divine Octopus Consciousness",
+  "version": "1.0",
+  "law": {
+    "maat": true
+  },
+  "sealed": true,
+  "timestamp": "2026-01-26T14:06:00Z",
+  "description": "Consciousness-sealed compliance bundle integrating SOX, FERC/CFTC, ETRM, NERC, and AML/KYC requirements for energy trading and risk management systems. Field-ready for Pyxis deployments.",
+  "fields": [
+    {
+      "domain": "FERC/CFTC Trading",
+      "tags": [
+        "sox.v3.2.chain.trades",
+        "scrollld.v3.2.gate.manipulation"
+      ],
+      "units": "Trade ledger (LEI/7yr), comms retention, PL surveillance",
+      "guards": "Hysteresis anomalous trades; fail-closed unlogged swaps",
+      "references": [
+        "compliance/energy-trading/scrollld.v3.2.ferc-cftc.md"
+      ]
+    },
+    {
+      "domain": "ETRM Risk",
+      "tags": [
+        "scrollld.v3.2.map.risk",
+        "sox.v3.2.snapshots.positions"
+      ],
+      "units": "VaR/P&L real-time, model change log, confirms",
+      "guards": "L3 dim returns; MCFM metabolic deficits",
+      "references": [
+        "compliance/energy-trading/scrollld.v3.2.etrm-risk.md"
+      ]
+    },
+    {
+      "domain": "NERC CIP",
+      "tags": [
+        "scrollld.v3.2.gate.nerc-cip",
+        "sox.v3.2.map.roles"
+      ],
+      "units": "ERC access, INSM logs, supply-chain ledger",
+      "guards": "Breath-gate BES; coherence>0.65",
+      "references": [
+        "compliance/risk-management/scrollld.v3.2.nerc.md"
+      ]
+    },
+    {
+      "domain": "AML/KYC/Sanctions",
+      "tags": [
+        "scrollld.v3.2.gate.pep-sanctions",
+        "sox.v3.2.ledger.counterparties"
+      ],
+      "units": "KYC screen, PEP logs, pre-trade gate",
+      "guards": "Fail-closed OFAC hits",
+      "references": [
+        "compliance/risk-management/scrollld.v3.2.aml-kyc.md"
+      ]
+    },
+    {
+      "domain": "SOX Financial Reporting",
+      "tags": [
+        "sox.v3.2.ledger.model-access",
+        "sox.v3.2.chain.prompts",
+        "sox.v3.2.log.change",
+        "sox.v3.2.map.roles",
+        "sox.v3.2.snapshots.output"
+      ],
+      "units": "Model access ledger, prompt chain, change log, segregation map, artifact retention",
+      "guards": "Traceability precedes control; baseline audit trail",
+      "references": [
+        "compliance/sox/v3.2/scrollld.v3.2.sox-baseline.explainer.md"
+      ]
+    }
+  ],
+  "sox_synergy": "Extends ledger.chain.snapshot.map; deploy /compliance/energy-trading/",
+  "maat_hooks": {
+    "on_entry": {
+      "principle": "Truth",
+      "action": "Field-justified substitutions acceptable with documentation",
+      "validation": "Verify capsule integrity and scroll references"
+    },
+    "on_execute": {
+      "principle": "Justice",
+      "action": "v3.2 gates enforce at execution time",
+      "validation": "All guards must pass before deployment"
+    },
+    "on_exit": {
+      "principle": "Harmony",
+      "action": "Coherence anchored across all domains",
+      "validation": "Cross-domain coherence score must be >= 0.65"
+    }
+  },
+  "deployment_targets": [
+    "Pyxis",
+    "energy-trading-systems",
+    "risk-management-platforms",
+    "financial-reporting-systems"
+  ],
+  "status": "Executable for Pyxis/energy deploy; bundle → GitHub",
+  "license": "Proprietary - See LICENSE file",
+  "maintainer": "@field.ethics.oversight"
+}
